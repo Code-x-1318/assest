@@ -1,0 +1,176 @@
+/* General styling */
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Nav items styled as inline-flex for responsiveness */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+li {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px; /* Added padding for spacing */
+}
+
+/* Text styling for center alignment and responsiveness */
+.text {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%; /* Reduced width for better centering */
+  text-align: center;
+}
+
+p {
+  color: rgb(117, 117, 117);
+  font-size: 1.1em;
+  word-spacing: 5px;
+  font-family: sans-serif;
+}
+
+/* Responsive button styling */
+button {
+  width: 80%; /* Adjusted width for smaller screens */
+  height: 3.5em; /* Smaller height for more balance */
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto; /* Center the button */
+}
+
+#watch {
+  justify-content: center;
+  align-items: baseline;
+}
+/* #watch_img{
+  height: 30px;
+} */
+#watch_intro {
+  margin-left: 1px;
+  line-height: 1.2rem;
+  color: white;
+}
+
+/* Adjusted heading to avoid oversized text */
+h1 {
+  font-size: 1em; /* Smaller font size for large headings */
+  margin: 5px auto; /* Center the heading */
+  margin-left: 5px;
+  text-align: center;
+}
+
+/* Applications section with flexible layout */
+.box {
+  display: flex;
+  flex-wrap: wrap; /* Wrap content for smaller screens */
+  justify-content: space-around; /* Distribute items evenly */
+  align-items: center;
+  padding: 10px;
+  font-size: 0.8em;
+}
+
+.small_box {
+  box-shadow: 2px 2px 10px black;
+  height: 200px; /* Smaller height to avoid overlapping */
+  width: 100%; /* Full width for smaller screens */
+  margin: 10px;
+  text-align: center;
+  font-size: 1.2em; /* Reduced font size */
+}
+
+.play_cards {
+  width: 100%; /* Adjusted image width for flexibility */
+  height: 180px; /* Maintain aspect ratio */
+}
+
+.description {
+  padding: 10px;
+  background: rgb(255,255,255,0.8);
+  transition: opacity .2s, visibility .2s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.small_box:hover .description {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Responsive layout for middle section */
+.middle {
+  display: flex;
+  flex-direction: column; /* Column layout for smaller screens */
+  align-items: center;
+  padding: 10px;
+}
+
+.middle_image {
+  width: 80%; /* Reduced width for better layout */
+  height: 100px; /* Maintain aspect ratio */
+  /* box-shadow: 1px 1px 25px black; */
+  margin: 100px; /* Spacing to prevent overlapping */
+}
+.img_middle{
+  width: 60%;
+  height: 100px;
+  visibility: hidden;
+  box-shadow: 1px 1px 25px black;
+}
+
+.middle_text {
+  text-align: justify;
+  width: 100%; /* Full width for smaller screens */
+}
+
+.about_sec {
+  font-size: 1.5em; /* Adjusted font size */
+  text-decoration: underline;
+  align-items: center;
+  margin-left: 160px;
+  color: black;
+}
+
+.about_desc {
+  margin: 10px;
+  text-align: justify;
+}
+
+/* Contact section with flexible layout */
+.contact {
+  background-color: black;
+  padding: 20px;
+
+}
+.ul_contact{
+  flex-direction: column;
+}
+.li_contact {
+  text-align: center; /* Centered text for smaller screens */
+  flex-direction: column;
+}
+
+#qwerty {
+  text-align: center;
+  color: white;
+  font-size: 1.3em;
+  text-decoration: underline;
+}
